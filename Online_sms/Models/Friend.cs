@@ -10,6 +10,7 @@ namespace Online_sms.Models
 
         public int User_Id { get; set; }
         public int Friend_Id { get; set; }
+        public bool Accept {  get; set; } = false;
         public DateTime CreateAt { get; set; }
 
         public virtual User? User { get; set; }
