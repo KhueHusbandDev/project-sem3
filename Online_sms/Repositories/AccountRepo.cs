@@ -91,7 +91,8 @@ namespace Online_sms.Repositories
                 Phone_Number = register.PhoneNumber,
                 Password = BCrypt.Net.BCrypt.HashPassword(register.Password),
                 IsEmailConfirmed = false,
-                ConfirmationCode = GenerateConfirmationCode()
+                ConfirmationCode = GenerateConfirmationCode(),
+                Subcription_id = 1
             };
 
             try
@@ -174,9 +175,11 @@ namespace Online_sms.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<CustomResult> UpdateUserAsync(User user)
+        public async Task<CustomResult> UpdateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return new CustomResult(200, "update Success", user);
         }
     }
 }

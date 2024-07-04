@@ -14,9 +14,11 @@ namespace Online_sms.Models
 
         public DbSet<RoomMessage> Messages { get; set; }
 
-        public DbSet<ChatLimit> ChatLimits { get; set; }
-
         public DbSet<Friend> Friends { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Payment> Payment { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,14 +29,14 @@ namespace Online_sms.Models
                 options.HasKey(u => u.User_id);
                 options.Property(u => u.CreatedAt).HasDefaultValueSql("GETDATE()");
 
-                options.HasOne(u => u.ChatLimit)
-                    .WithOne(cl => cl.User)
-                    .HasForeignKey<ChatLimit>(cl => cl.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
                 options.HasMany(u => u.Friends)
                     .WithOne(f => f.User)
                     .HasForeignKey(f => f.User_Id)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                options.HasOne(u => u.Subscription)
+                    .WithMany()
+                    .HasForeignKey(u => u.Subcription_id)
                     .OnDelete(DeleteBehavior.Cascade);
 
                 var listUser = new List<User>();
@@ -49,7 +51,9 @@ namespace Online_sms.Models
                         User_name = Faker.Name.FullName(),
                         Email = Faker.Name.First() + Faker.Name.Suffix() + "@gmail.com",
                         Password = "$2a$12$p6SajsJcQBaDyh2eMg54huGoVjNJxUaiCcDa81dWifXKnAlBbZoVa",
-                        Phone_Number = Faker.Phone.Number()
+                        Balance = 0,
+                        Phone_Number = Faker.Phone.Number(),
+                        Subcription_id = 1,
                     });
                 }
                 options.HasData(listUser);
@@ -60,10 +64,6 @@ namespace Online_sms.Models
                     options.Property(u => u.CreatedAt).HasDefaultValueSql("GETDATE()");
                     options.Property(u => u.UpdatedAt).HasDefaultValueSql("GETDATE()");
                 });
-                modelBuilder.Entity<ChatLimit>(entity =>
-                {
-                    entity.HasKey(cl => cl.Id) ;
-                });
                 modelBuilder.Entity<Friend>().HasKey(f=>f.Id);
                 modelBuilder.Entity<RoomMessage>(options =>
                 {
@@ -73,6 +73,23 @@ namespace Online_sms.Models
 
                     options.Property(u => u.CreatedAt).HasDefaultValueSql("GETDATE()");
                 });
+                modelBuilder.Entity<Payment>()
+                    .HasOne(p => p.User)
+                    .WithMany(u => u.Payments)
+                    .HasForeignKey(p => p.User_Id);
+
+                modelBuilder.Entity<Subscription>().HasData(
+                    new Subscription { SubscriptionId = 1, Name = "Chat Free", ChatLimit = 5, Create_at = DateTime.Now, enddate = DateTime.Now.AddDays(1), Price = 0 },
+                    new Subscription { SubscriptionId = 2, Name = "Unlimited Chat (1 day)", ChatLimit = -1, Create_at = DateTime.Now, enddate = DateTime.Now.AddDays(1), Price = 1 },
+                    new Subscription { SubscriptionId = 3, Name = "Unlimited Chat (1 month)", ChatLimit = -1, Create_at = DateTime.Now, enddate = DateTime.Now.AddMonths(1), Price = 5 }
+                );  
+                modelBuilder.Entity<User>()
+                .Property(u => u.Balance)
+                .HasColumnType("decimal(18,2)");
+
+                modelBuilder.Entity<Subscription>()
+                    .Property(s => s.Price)
+                    .HasColumnType("decimal(18,2)");
             });
         }
     } 

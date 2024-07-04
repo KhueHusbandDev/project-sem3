@@ -13,6 +13,22 @@ namespace Online_sms.Repositories
             _context = context;
         }
 
+        public async Task<CustomResult> Accept(int friendId, int userId)
+        {
+            var friendship = await _context.Friends.FirstOrDefaultAsync(f =>
+                (f.User_Id == userId && f.Friend_Id == friendId) ||
+                (f.User_Id == friendId && f.Friend_Id == userId));
+                    
+            if (friendship == null)
+            {
+                return new CustomResult(404, "Friendship not found", null);
+            }
+
+            friendship.Accept = true;
+            await _context.SaveChangesAsync();
+            return new CustomResult(200, "Friend request accepted", friendship);
+        }
+
         public async Task<CustomResult> AddFriend(FriendRequest friendRequest)
         {
             var existingFriendship = await _context.Friends.FirstOrDefaultAsync(f =>
@@ -38,7 +54,7 @@ namespace Online_sms.Repositories
             await _context.SaveChangesAsync();
 
             return new CustomResult(200, "Friend added successfully", newfriend);
-        }
+        }   
 
         public async Task<IEnumerable<Friend>> GetAllFriend()
         {

@@ -38,6 +38,21 @@ namespace Online_sms.Controllers
                 return Ok(result.Data);
             }
         }
+        [HttpPut]
+        [Authorize]
+        public async Task<IActionResult> AcceptRequest(int friendId)
+        {
+            var userId = int.Parse(User.FindFirst("User_id")?.Value);
+            var result = await _friendRepo.Accept(friendId, userId);
+            if (result.Status == 200)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return StatusCode(result.Status, result.Message);
+            }
+        }
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> GetFriends()
