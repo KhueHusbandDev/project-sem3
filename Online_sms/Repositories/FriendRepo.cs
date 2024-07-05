@@ -51,6 +51,18 @@ namespace Online_sms.Repositories
                 CreateAt = DateTime.Now,
             };
             _context.Friends.Add(newfriend);
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.User_id == friendRequest.UserId);
+            if (user.Subcription_id == 1)
+            {
+                var newSubscription = await _context.Subscriptions.FirstOrDefaultAsync(s => s.SubscriptionId == 2);
+                if (newSubscription != null)
+                {
+                    user.Subcription_id = 2;
+                    user.SubscriptionEndDate = DateTime.UtcNow.AddDays((newSubscription.enddate - newSubscription.Create_at).TotalDays);
+                }
+            }
+
             await _context.SaveChangesAsync();
 
             return new CustomResult(200, "Friend added successfully", newfriend);

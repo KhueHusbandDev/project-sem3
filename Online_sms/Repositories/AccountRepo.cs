@@ -92,7 +92,8 @@ namespace Online_sms.Repositories
                 Password = BCrypt.Net.BCrypt.HashPassword(register.Password),
                 IsEmailConfirmed = false,
                 ConfirmationCode = GenerateConfirmationCode(),
-                Subcription_id = 1
+                Subcription_id = 1,
+                SubscriptionEndDate = DateTime.UtcNow.AddDays(1)
             };
 
             try

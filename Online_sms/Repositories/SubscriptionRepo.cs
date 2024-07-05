@@ -54,43 +54,22 @@ namespace Online_sms.Repositories
             {
                 return new CustomResult(400, "insufficient balance", null);
             }
-            if (user.Subcription_id != null)
+            var currentSubscription = await GetSubscriptionByIdAsync(user.Subcription_id);
+
+            if (subscription.SubscriptionId <= currentSubscription.SubscriptionId)
             {
-                var existingSubscription = await _context.Subscriptions.FirstOrDefaultAsync(s => s.SubscriptionId == user.Subcription_id);
-                if (subscription.SubscriptionId < existingSubscription.SubscriptionId)
-                {
-                    return new CustomResult(400, "You cannot purchase a lower tier subscription", null);
-                }
-                else if (subscription.SubscriptionId == existingSubscription.SubscriptionId)
-                {
-                    return new CustomResult(400, "You already have this tier subscription", null);
-                }
-                if (existingSubscription.Price < subscription.Price)
-                {
-                    user.Subcription_id = subscriptionId;
-                    user.Balance -= subscription.Price;
-
-                    await _context.SaveChangesAsync();
-
-                    return new CustomResult(200, "Subscription upgraded successfully", null);
-                }
-                else
-                {
-                    return new CustomResult(400, "You already have a higher or equal tier subscription", null);
-                }
+                return new CustomResult(400, "You cannot downgrade or purchase the same subscription", null);
             }
-            else
-            {
-                user.Subcription_id = subscriptionId;
-                user.Balance -= subscription.Price;
+            user.Subcription_id = subscriptionId;
+            user.SubscriptionEndDate = DateTime.UtcNow.AddDays((subscription.enddate - subscription.Create_at).TotalDays);
+            user.Balance -= subscription.Price;
 
-                await _context.SaveChangesAsync();
-                return new CustomResult(200, "Subscription purchased successfully", null);
-            }
+            await _context.SaveChangesAsync();
+            return new CustomResult(200, "Subscription purchased successfully", null);
         }
         public async Task<Subscription> GetSubscriptionByIdAsync(int subscriptionId)
         {
-            return await _context.Subscriptions.Include(s => s.Name).FirstOrDefaultAsync(s => s.SubscriptionId == subscriptionId);
+            return await _context.Subscriptions.FirstOrDefaultAsync(s => s.SubscriptionId == subscriptionId);
         }
     }
 }
