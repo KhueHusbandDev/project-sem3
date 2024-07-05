@@ -28,7 +28,8 @@ namespace Online_sms.Models
 
         public string? ConfirmationCode { get; set; }
 
-        public int Subcription_id { get; set; } 
+        public int Subcription_id { get; set; }
+        public DateTime SubscriptionEndDate { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
