@@ -1,0 +1,375 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FPT-Term3\\Eproject\\Online_sms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\chatconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\chatconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\migrations\\20240704054723_regis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\migrations\\20240704054723_regis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\chatlimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\chatlimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\repositories\\chatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\repositories\\chatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\ichatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\ichatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACEAAAAAraqqyl4KwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T10:46:59.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAACQAAACAz1HHdFkZwBwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T10:46:36.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAuthRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAuthRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Interfaces\\IAuthRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAuthRepo.cs",
+              "RelativeToolTip": "Online_sms\\Interfaces\\IAuthRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:22:19.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AccountRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Repositories\\AccountRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AccountRepo.cs",
+              "RelativeToolTip": "Online_sms\\Repositories\\AccountRepo.cs",
+              "ViewState": "AQIAAGgAAAAAeN9KvHH4v1oAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T10:43:20.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AuthRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Repositories\\AuthRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AuthRepo.cs",
+              "RelativeToolTip": "Online_sms\\Repositories\\AuthRepo.cs",
+              "ViewState": "AQIAABoAAADAN4NW/hgvwGIAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T04:14:42.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAccountRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAccountRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Interfaces\\IAccountRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAccountRepo.cs",
+              "RelativeToolTip": "Online_sms\\Interfaces\\IAccountRepo.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwA0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:22:19.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
+              "RelativeDocumentMoniker": "Online_sms\\appsettings.json",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
+              "RelativeToolTip": "Online_sms\\appsettings.json",
+              "ViewState": "AQIAAAcAAAAAAADgAebzvxEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-02T06:21:52.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\User.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\User.cs",
+              "RelativeToolTip": "Online_sms\\Models\\User.cs",
+              "ViewState": "AQIAAA0AAAAAZ1VVVRPavxMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T05:42:22.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatConnection.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\ChatConnection.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\ChatConnection.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\ChatConnection.cs",
+              "RelativeToolTip": "Online_sms\\Models\\ChatConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:27:49.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Program.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Program.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Program.cs",
+              "RelativeToolTip": "Online_sms\\Program.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAQwFoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T05:05:40.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:14:18.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:14:14.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Online_sms\\appsettings.Development.json",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.Development.json",
+              "RelativeToolTip": "Online_sms\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-02T06:21:48.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\Login.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\Login.cs",
+              "RelativeToolTip": "Online_sms\\Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T11:11:25.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\Register.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\Register.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\Register.cs",
+              "RelativeToolTip": "Online_sms\\Models\\Register.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T11:11:15.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240704054723_regis.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Migrations\\20240704054723_regis.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Migrations\\20240704054723_regis.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Migrations\\20240704054723_regis.cs",
+              "RelativeToolTip": "Online_sms\\Migrations\\20240704054723_regis.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T05:47:23.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatLimit.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\ChatLimit.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\ChatLimit.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\ChatLimit.cs",
+              "RelativeToolTip": "Online_sms\\Models\\ChatLimit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:45:50.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Models\\DatabaseContext.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\DatabaseContext.cs",
+              "RelativeToolTip": "Online_sms\\Models\\DatabaseContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:57:31.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChatRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\ChatRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Repositories\\ChatRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\ChatRepo.cs",
+              "RelativeToolTip": "Online_sms\\Repositories\\ChatRepo.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAuwGMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:55:35.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IChatRepo.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IChatRepo.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Interfaces\\IChatRepo.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IChatRepo.cs",
+              "RelativeToolTip": "Online_sms\\Interfaces\\IChatRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:54:59.551Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

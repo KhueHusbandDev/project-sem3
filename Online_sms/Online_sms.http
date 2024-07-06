@@ -1,0 +1,6 @@
+@Online_sms_HostAddress = http://localhost:5247
+
+GET {{Online_sms_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
