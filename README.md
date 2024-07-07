@@ -17,7 +17,7 @@ List Of Member:
 
     2.Vũ Hải Anh            (Student)
 
-    3.Hồ Anh Quân           (Student)
+    3.Hồ Anh Quân           (Student1376113)
 
     4.Phạm Đắc An           (Student)
 =====================================
