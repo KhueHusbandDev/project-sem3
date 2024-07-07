@@ -32,8 +32,8 @@ namespace Online_sms.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> Login([FromForm]Login userLogin)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromForm] Login userLogin)
         {
             var customStatus = await _authRepo.Login(userLogin);
 
@@ -55,13 +55,18 @@ namespace Online_sms.Controllers
             }
         }
 
-        [HttpPut]
-        [Authorize]
-        public async Task<IActionResult> ConfirmEmail()
+        [HttpPost("resetpassword")]
+        public async Task<IActionResult> ResetPassword([FromForm] string email, [FromForm] string username, [FromForm] string newPassword)
         {
-            var email = User.FindFirst(ClaimTypes.Email).Value;
-
-            return Ok(await _authRepo.SetEmailConfirm(email));
+            var result = await _authRepo.ResetPassword(email, username, newPassword);
+            if (result.Status == 200)
+            {
+                return Ok(result.Message);
+            }
+            else
+            {
+                return StatusCode(result.Status, result.Message);
+            }
         }
     }
 

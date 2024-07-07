@@ -15,6 +15,7 @@ namespace Online_sms.Repositories
     {
         private readonly IConfiguration _config;
         private readonly DatabaseContext _context;
+        
         public AuthRepo(IConfiguration config, DatabaseContext context)
         {
             _config = config;
@@ -82,6 +83,10 @@ namespace Online_sms.Repositories
             {
                 return new CustomResult(400, "Wrong username or password", null);
             }
+            if (!user.IsEmailConfirmed)
+            {
+                return new CustomResult(400, "Email not confirmed", null);
+            }
 
             var token = CreateToken(user, DateTime.Now.AddDays(5));
 
@@ -103,16 +108,19 @@ namespace Online_sms.Repositories
             return new CustomResult(200, "Logout successful", null);
         }
 
-        public async Task<CustomResult> SetEmailConfirm(string email)
+        public async Task<CustomResult> ResetPassword(string email, string username, string newPassword)
         {
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email && u.User_name == username);
 
-            var account = await _context.Users.SingleOrDefaultAsync(a => a.Email == email);
- 
-            account.IsEmailConfirmed = true;
+            if (user != null)
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+                _context.Users.Update(user);
+                await _context.SaveChangesAsync();
+                return new CustomResult(200, "Password reset successfully", null);
+            }
 
-            await _context.SaveChangesAsync();
-
-            return new CustomResult(200, "Email Confirm Success", null);
+            return new CustomResult(400, "Invalid email or username", null);
         }
     }
 }

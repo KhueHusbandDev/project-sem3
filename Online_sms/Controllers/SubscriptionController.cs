@@ -47,5 +47,20 @@ namespace Online_sms.Controllers
                 return StatusCode(result.Status, result.Message);
             }
         }
+        [HttpPut("Checkdate")]
+        public async Task<IActionResult> CheckDate()
+        {
+            var User_Id = int.Parse(User.FindFirst("User_id")?.Value);
+            var result = await _subscriptionRepo.Checkdate(User_Id);
+
+            if (result.Status == 200)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return StatusCode(result.Status, result.Message);
+            }
+        }
     }
 }

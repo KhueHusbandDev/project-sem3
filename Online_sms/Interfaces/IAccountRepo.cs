@@ -1,4 +1,7 @@
-﻿using Online_sms.Models;
+﻿using Faker;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
+using Online_sms.Models;
 
 namespace Online_sms.Interfaces
 {
@@ -12,11 +15,14 @@ namespace Online_sms.Interfaces
 
         public Task<CustomResult> UpdateUserAsync(User user);
 
-        public Task<bool> CheckEmailUnique(string email);
+        public Task<CustomResult> CheckEmailUnique(string email);
 
-        public Task<bool> CheckPhoneUnique(string phone);
+        public Task<CustomResult> CheckPhoneUnique(string phone);
+        public Task<CustomResult> CheckUsername(string username);
+        public Task<CustomResult> CheckPassword(string password);
+        public Task<CustomResult> VerifyEmailConfirmationCode(User user, string enteredCode);
+        public Task<User> GetUserByEmailAsync(string email);
 
         public Task<CustomResult> UploadImage(string email, IFormFile uploadImage);
-
     }
 }
