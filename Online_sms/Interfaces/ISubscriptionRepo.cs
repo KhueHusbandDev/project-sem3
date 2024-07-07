@@ -8,5 +8,6 @@ namespace Online_sms.Interfaces
         public Task AddUserSubscriptionAsync(Subscription Subscription);
         public Task<CustomResult> AddMoney(int userId, int Balance);
         public Task<CustomResult> BuySubscription(int userId, int subscriptionId);
+        public Task<CustomResult> Checkdate(int userId);
     }
 }

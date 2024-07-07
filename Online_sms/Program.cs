@@ -23,6 +23,7 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 );
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(opt =>
 {
     opt.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
@@ -36,6 +37,16 @@ builder.Services.AddSwaggerGen(opt =>
 builder.Services.AddSignalR();
 
 var allowOrigin = builder.Configuration.GetSection("AllowOrigin").Get<string[]>();
+builder.Services.AddCors(option =>
+{
+    option.AddPolicy(MyAllowSpecificOrigins, policy =>
+    {
+        policy.WithOrigins("http://localhost:4173")
+        .AllowAnyHeader()
+        .AllowCredentials()
+        .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -73,7 +84,7 @@ builder.Services.AddCors(option =>
 {
     option.AddPolicy(MyAllowSpecificOrigins, policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("http://localhost:4173")
         .AllowAnyHeader()
         .AllowCredentials()
         .AllowAnyMethod();
@@ -89,7 +100,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors(MyAllowSpecificOrigins);
 app.MapHub<ChatHub>("/Chat");
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

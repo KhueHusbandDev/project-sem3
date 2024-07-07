@@ -20,14 +20,13 @@ namespace Online_sms.Models
 
         public string Password { get; set; }
 
-        public decimal Balance { get; set; } 
-
         public string? Phone_Number { get; set; }
 
         public bool IsEmailConfirmed { get; set; }
 
         public string? ConfirmationCode { get; set; }
 
+        public decimal Balance { get; set; }
         public int Subcription_id { get; set; }
         public DateTime SubscriptionEndDate { get; set; }
 

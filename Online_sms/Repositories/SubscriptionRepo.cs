@@ -67,9 +67,31 @@ namespace Online_sms.Repositories
             await _context.SaveChangesAsync();
             return new CustomResult(200, "Subscription purchased successfully", null);
         }
+
+        public async Task<CustomResult> Checkdate(int userId)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(i => i.User_id == userId);
+
+            if (user == null)
+            {
+                return new CustomResult(404, "User not found", null);
+            }
+            if (user.SubscriptionEndDate < DateTime.UtcNow)
+            {
+                user.Subcription_id = 1;
+                user.SubscriptionEndDate = DateTime.UtcNow.AddDays(1);
+                await _context.SaveChangesAsync();
+
+                return new CustomResult(200, "Subscription has expired and reset to default", user);
+            }
+
+            return new CustomResult(200, "Subscription is still active", user);
+        }
+
         public async Task<Subscription> GetSubscriptionByIdAsync(int subscriptionId)
         {
             return await _context.Subscriptions.FirstOrDefaultAsync(s => s.SubscriptionId == subscriptionId);
         }
+
     }
 }

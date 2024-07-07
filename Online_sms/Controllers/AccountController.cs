@@ -18,23 +18,46 @@ namespace Online_sms.Controllers
             _accountRepo = accountRepo;
         }
         [HttpPost]
-        public async Task<IActionResult> Register([FromForm]Register register)
+        public async Task<IActionResult> Register([FromForm] Register register)
         {
             var customStatus = await _accountRepo.Register(register);
 
             return Ok(customStatus);
         }
 
-/*        [HttpPut]
-        [Route("avatar")]
-        [Authorize]
-        public async Task<IActionResult> UploadAvatar([FromForm]IFormFile uploadImage)
+        [HttpPost("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail([FromForm] string email, [FromForm] string code)
         {
-            var email = User.FindFirst(ClaimTypes.Email).Value;
+            try
+            {
+                // yeu cau nguoi dung nhap lai email va code de active
+                if (string.IsNullOrEmpty(code))
+                {
+                    return BadRequest(new CustomResult(400, "Code are required", null));
+                }
 
-            var customResult = await _accountRepo.UploadImage(email, uploadImage);
+                // lay thong tin nguoi dung bang email
+                var user = await _accountRepo.GetUserByEmailAsync(email);
+                if (user == null)
+                {
+                    return NotFound(new CustomResult(400, "User not found", null));
+                }
 
-            return Ok(customResult);
-        }*/
+                // check code de active
+                var customStatus = await _accountRepo.VerifyEmailConfirmationCode(user, code);
+                return Ok(customStatus);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new CustomResult(500, "An internal server error occurred", null));
+            }
+        }
+
+        [HttpPost("upload-image")]
+        public async Task<IActionResult> UploadImage([FromForm] string email, [FromForm] IFormFile image)
+        {
+            var customStatus = await _accountRepo.UploadImage(email, image);
+            return Ok(customStatus);
+        }
     }
 }
