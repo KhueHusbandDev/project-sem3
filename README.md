@@ -1,4 +1,3 @@
-                THÊM SỐ SINH VIÊN VÔ 
 [OnlineSMS]
 
 =====================================
@@ -19,7 +18,7 @@ List Of Member:
 
     3.Hồ Anh Quân           (Student1376113)
 
-    4.Phạm Đắc An           (Student)
+    4.Phạm Đắc An           (Student1455062)
 =====================================
 
 Documentations: 
