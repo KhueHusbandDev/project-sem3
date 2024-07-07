@@ -15,7 +15,7 @@ List Of Member:
 
     1.Ngô Trần Thuấn        (Student1420709)
 
-    2.Vũ Hải Anh            (Student)
+    2.Vũ Hải Anh            (Student1369168)
 
     3.Hồ Anh Quân           (Student1376113)
 
