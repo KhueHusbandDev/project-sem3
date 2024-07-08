@@ -14,7 +14,8 @@ namespace Online_sms.Repositories
     public class AuthRepo : IAuthRepo
     {
         private readonly IConfiguration _config;
-        private readonly DatabaseContext _context; 
+        private readonly DatabaseContext _context;
+        private readonly IAccountRepo _accountRepo;
         public AuthRepo(IConfiguration config, DatabaseContext context)
         {
             _config = config;
@@ -57,23 +58,6 @@ namespace Online_sms.Repositories
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
-        public async Task<CustomResult> GetUser(string email)
-        {
-            var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email);
-
-            if (user != null)
-            {
-                return new CustomResult(200, "success", new UserPublic()
-                {
-                    Email = user.Email,
-                    PhoneNumber = user.Phone_Number
-                });
-            }
-
-            return new CustomResult(400, "something went wrong", null);
-        }
-
         public async Task<CustomResult> Login(Login userLogin)
         {
             var user = await Authenticate(userLogin);
@@ -109,6 +93,12 @@ namespace Online_sms.Repositories
         public async Task<CustomResult> ResetPassword(string email, string username, string newPassword)
         {
             var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email && u.User_name == username);
+
+            var passwordValidationResult = await _accountRepo.CheckPassword(newPassword);
+            if (passwordValidationResult.Message != "Password accepted!")
+            {
+                return passwordValidationResult;
+            }
 
             if (user != null)
             {

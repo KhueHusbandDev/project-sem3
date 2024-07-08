@@ -26,7 +26,20 @@ namespace Online_sms.Models
         public string? ConfirmationCode { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
+        public DateOnly DOB {  get; set; }
+        public string Address { get; set; }
+        public string Hobbies { get; set; }
+        public string Likes { get; set; }
+        public string Dislikes { get; set; }
+        public string Cuisines { get; set; }
+        public string Sports { get; set; }
+        public string Qualifications { get; set; }
+        public string School { get; set; }
+        public string College { get; set; }
+        public string Designation { get; set; }
+        public string Organisation { get; set; }
+        public int Subcription_id { get; set; }
+        public decimal Balance { get; set; }
         public virtual ChatLimit ChatLimit { get; set; }
         public virtual ICollection<RoomMessage> Messages { get; set; }
         public virtual ICollection<Friend> Friends { get; set; }

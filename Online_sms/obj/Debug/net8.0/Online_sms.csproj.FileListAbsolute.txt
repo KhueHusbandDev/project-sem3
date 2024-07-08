@@ -294,3 +294,4 @@ C:\FPT-Term3\Eproject\Online_sms\Online_sms\obj\Debug\net8.0\refint\Online_sms.d
 C:\FPT-Term3\Eproject\Online_sms\Online_sms\obj\Debug\net8.0\Online_sms.pdb
 C:\FPT-Term3\Eproject\Online_sms\Online_sms\obj\Debug\net8.0\Online_sms.genruntimeconfig.cache
 C:\FPT-Term3\Eproject\Online_sms\Online_sms\obj\Debug\net8.0\ref\Online_sms.dll
+C:\FPT-Term3\Eproject\Online_sms\Online_sms\obj\Debug\net8.0\Online_sms.sourcelink.json

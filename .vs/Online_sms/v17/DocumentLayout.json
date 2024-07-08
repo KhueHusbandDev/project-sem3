@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\iauthrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\interfaces\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\interfaces\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|solutionrelative:online_sms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A5DABD4-19E0-4F39-80B1-B5269D73D756}|Online_sms\\Online_sms.csproj|c:\\fpt-term3\\eproject\\online_sms\\online_sms\\models\\chatconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,52 +122,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Online_sms\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAACEAAAAAraqqyl4KwDgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T10:46:59.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Online_sms\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACQAAACAz1HHdFkZwBwAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T10:46:36.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "IAuthRepo.cs",
               "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAuthRepo.cs",
               "RelativeDocumentMoniker": "Online_sms\\Interfaces\\IAuthRepo.cs",
               "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAuthRepo.cs",
               "RelativeToolTip": "Online_sms\\Interfaces\\IAuthRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:22:19.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:22:19.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
+              "RelativeDocumentMoniker": "Online_sms\\appsettings.json",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
+              "RelativeToolTip": "Online_sms\\appsettings.json",
+              "ViewState": "AQIAAAcAAAAAAADgAebzvxEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-02T06:21:52.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AccountRepo.cs",
               "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AccountRepo.cs",
               "RelativeDocumentMoniker": "Online_sms\\Repositories\\AccountRepo.cs",
               "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AccountRepo.cs",
               "RelativeToolTip": "Online_sms\\Repositories\\AccountRepo.cs",
-              "ViewState": "AQIAAGgAAAAAeN9KvHH4v1oAAACRAAAA",
+              "ViewState": "AQIAALYAAAAA3rcSbxwewLkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T10:43:20.244Z",
               "EditorCaption": ""
@@ -180,14 +165,14 @@
               "RelativeDocumentMoniker": "Online_sms\\Repositories\\AuthRepo.cs",
               "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Repositories\\AuthRepo.cs",
               "RelativeToolTip": "Online_sms\\Repositories\\AuthRepo.cs",
-              "ViewState": "AQIAABoAAADAN4NW/hgvwGIAAABFAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T04:14:42.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IAccountRepo.cs",
               "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Interfaces\\IAccountRepo.cs",
               "RelativeDocumentMoniker": "Online_sms\\Interfaces\\IAccountRepo.cs",
@@ -195,33 +180,44 @@
               "RelativeToolTip": "Online_sms\\Interfaces\\IAccountRepo.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAcwA0AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:22:19.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:22:19.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
-              "RelativeDocumentMoniker": "Online_sms\\appsettings.json",
-              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\appsettings.json",
-              "RelativeToolTip": "Online_sms\\appsettings.json",
-              "ViewState": "AQIAAAcAAAAAAADgAebzvxEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-02T06:21:52.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\User.cs",
               "RelativeDocumentMoniker": "Online_sms\\Models\\User.cs",
               "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Models\\User.cs",
               "RelativeToolTip": "Online_sms\\Models\\User.cs",
-              "ViewState": "AQIAAA0AAAAAZ1VVVRPavxMAAAAsAAAA",
+              "ViewState": "AQIAACYAAAAAAAB4YUE8wBsAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T05:42:22.95Z"
+              "WhenOpened": "2024-07-05T05:42:22.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAACQAAACAz1HHdFkZwBwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T10:46:36.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Online_sms\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\FPT-Term3\\Eproject\\Online_sms\\Online_sms\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Online_sms\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACEAAAAAraqqyl4KwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T10:46:59.643Z"
             },
             {
               "$type": "Document",

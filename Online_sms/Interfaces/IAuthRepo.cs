@@ -13,6 +13,6 @@ namespace Online_sms.Interfaces
 
         public string CreateToken(User user, DateTime expire);
 
-        public Task<CustomResult> GetUser(string email);
+        /*public Task<CustomResult> GetUser(string email);*/
     }
 }
