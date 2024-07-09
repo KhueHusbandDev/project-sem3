@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
+using Online_sms.Repositories;
 
 namespace Online_sms.Controllers
 {
@@ -58,6 +60,13 @@ namespace Online_sms.Controllers
         {
             var customStatus = await _accountRepo.UploadImage(email, image);
             return Ok(customStatus);
+        }
+        [HttpGet("search")]
+        public async Task<CustomResult> SearchUser(string phone)
+        {
+            var search = await _accountRepo.SearchUser(phone);
+
+            return search;
         }
     }
 }

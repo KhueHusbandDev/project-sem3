@@ -241,5 +241,11 @@ namespace Online_sms.Repositories
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
+        public async Task<CustomResult> SearchUser(string search)
+        {
+            var list = await _context.Users.Where(u => u.Phone_Number.Contains(search)).Take(10).ToListAsync();
+
+            return new CustomResult(200, "done", list);
+        }
     }
 }

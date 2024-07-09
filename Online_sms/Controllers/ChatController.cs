@@ -67,7 +67,7 @@ namespace Online_sms.Controllers
         [HttpGet]
         [Route("search")]
         [Authorize]
-        public async Task<IActionResult> SearchUser([FromQuery] string name)
+        public async Task<IActionResult> SearchUser( string name)
         {
             var customStatus = await _chatRepo.SearchUser(name);
 

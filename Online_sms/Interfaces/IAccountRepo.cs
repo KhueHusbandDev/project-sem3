@@ -24,5 +24,7 @@ namespace Online_sms.Interfaces
         public Task<User> GetUserByEmailAsync(string email);
 
         public Task<CustomResult> UploadImage(string email, IFormFile uploadImage);
+
+        public Task<CustomResult> SearchUser(string search);
     }
 }
