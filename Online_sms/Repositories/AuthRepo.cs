@@ -15,7 +15,7 @@ namespace Online_sms.Repositories
     {
         private readonly IConfiguration _config;
         private readonly DatabaseContext _context;
-        
+
         public AuthRepo(IConfiguration config, DatabaseContext context)
         {
             _config = config;

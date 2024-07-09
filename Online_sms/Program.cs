@@ -41,7 +41,7 @@ builder.Services.AddCors(option =>
 {
     option.AddPolicy(MyAllowSpecificOrigins, policy =>
     {
-        policy.WithOrigins("http://localhost:4173")
+        policy.WithOrigins("http://localhost:5173")
         .AllowAnyHeader()
         .AllowCredentials()
         .AllowAnyMethod();
@@ -80,11 +80,12 @@ builder.Services.AddTransient<IChatRepo, ChatRepo>();
 builder.Services.AddScoped<IFriendRepo, FriendRepo>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<ISubscriptionRepo, SubscriptionRepo>();
+
 builder.Services.AddCors(option =>
 {
     option.AddPolicy(MyAllowSpecificOrigins, policy =>
     {
-        policy.WithOrigins("http://localhost:4173")
+        policy.WithOrigins("http://localhost:5173")
         .AllowAnyHeader()
         .AllowCredentials()
         .AllowAnyMethod();

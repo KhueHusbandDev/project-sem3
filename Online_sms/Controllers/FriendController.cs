@@ -20,7 +20,7 @@ namespace Online_sms.Controllers
 
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> AddFriend([FromForm] FriendRequest friendRequest)
+        public async Task<IActionResult> AddFriend(FriendRequest friendRequest)
         {
             var User_id = int.Parse(User.FindFirst("User_id")?.Value);
             friendRequest.UserId = User_id;

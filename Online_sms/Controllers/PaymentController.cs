@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Online_sms.Interfaces;
 using Online_sms.Models;
 using Online_sms.Repositories;
+using System.Security.Claims;
 
 namespace Online_sms.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PaymentController : ControllerBase
     {
         private readonly IPaymentRepo _paymentRepo;
@@ -36,6 +39,9 @@ namespace Online_sms.Controllers
         [HttpPost]
         public async Task<ActionResult<CustomResult>> PostPayment(PaymentRequest paymentRequest)
         {
+            var userId = int.Parse(User.FindFirst("User_id")?.Value);
+
+            paymentRequest.User_Id = userId;
             return Ok(await _paymentRepo.CreatePaymentAsync(paymentRequest));
         }
         [HttpPut("{id}")]

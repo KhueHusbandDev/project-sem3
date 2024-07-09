@@ -146,3 +146,5 @@ C:\IT\14.DMAWS\Online_sms\Online_sms\obj\Debug\net8.0\refint\Online_sms.dll
 C:\IT\14.DMAWS\Online_sms\Online_sms\obj\Debug\net8.0\Online_sms.pdb
 C:\IT\14.DMAWS\Online_sms\Online_sms\obj\Debug\net8.0\Online_sms.genruntimeconfig.cache
 C:\IT\14.DMAWS\Online_sms\Online_sms\obj\Debug\net8.0\ref\Online_sms.dll
+C:\IT\14.DMAWS\Online_sms\Online_sms\bin\Debug\net8.0\Faker.dll
+C:\IT\14.DMAWS\Online_sms\Online_sms\bin\Debug\net8.0\Online_sms.staticwebassets.runtime.json

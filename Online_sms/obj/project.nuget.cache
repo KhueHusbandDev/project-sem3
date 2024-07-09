@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ltz2sfcnmsyAyNJoOlEAStn/sYaogTj/I6pWfe/nP5GhFwaLKt5rl8FDIBysKm68XdK3QJR9pCyQvDiHwgb56Q==",
+  "dgSpecHash": "FfRVqE3/sO4NByR6qs8fjVwkLhWF/+e3paVytAsdrLo8K/glewBZIaQ+wsONph0o2N8RTcoHGgKIyLlemZkBxg==",
   "success": true,
   "projectFilePath": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\Online_sms.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\godde\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\godde\\.nuget\\packages\\faker\\1.2.0\\faker.1.2.0.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\faker.net\\2.0.163\\faker.net.2.0.163.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\mailkit\\4.6.0\\mailkit.4.6.0.nupkg.sha512",
@@ -130,5 +131,16 @@
     "C:\\Users\\godde\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\godde\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Faker 1.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Faker",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

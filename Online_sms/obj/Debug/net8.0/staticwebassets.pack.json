@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\10.png",
+      "PackagePath": "staticwebassets\\images\\10.png"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\11.jpg"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\6.png",
+      "PackagePath": "staticwebassets\\images\\6.png"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\Screenshot (36)638561285995758017.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (36)638561285995758017.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Online_sms.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Online_sms.props",
+      "PackagePath": "build\\Online_sms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Online_sms.props",
+      "PackagePath": "buildMultiTargeting\\Online_sms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Online_sms.props",
+      "PackagePath": "buildTransitive\\Online_sms.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
