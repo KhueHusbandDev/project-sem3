@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\8.jpg"
     },
     {
+      "Id": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\Screenshot (36)638561285995758017.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (36)638561285995758017.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Online_sms.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

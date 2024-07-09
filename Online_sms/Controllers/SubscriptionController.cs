@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Online_sms.Interfaces;
 using Online_sms.Models;
@@ -8,6 +9,7 @@ namespace Online_sms.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SubscriptionController : ControllerBase
     {
         public readonly IAccountRepo _AccountRepo;

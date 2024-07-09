@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Usk1SX0AOcSBEqw6GWpwhq38W+2WjnqxyKB1d9U6xMY=",
+  "Hash": "nwsEeb7XCTQX8oXvQZqrjQiPpIobDUaAl5JqPhZxiKI=",
   "Source": "Online_sms",
   "BasePath": "_content/Online_sms",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\8.jpg"
+    },
+    {
+      "Identity": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\images\\Screenshot (36)638561285995758017.png",
+      "SourceId": "Online_sms",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\IT\\14.DMAWS\\Online_sms\\Online_sms\\wwwroot\\",
+      "BasePath": "_content/Online_sms",
+      "RelativePath": "images/Screenshot (36)638561285995758017.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Screenshot (36)638561285995758017.png"
     }
   ]
 }

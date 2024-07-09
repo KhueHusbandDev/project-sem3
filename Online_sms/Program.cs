@@ -80,6 +80,7 @@ builder.Services.AddTransient<IChatRepo, ChatRepo>();
 builder.Services.AddScoped<IFriendRepo, FriendRepo>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<ISubscriptionRepo, SubscriptionRepo>();
+
 builder.Services.AddCors(option =>
 {
     option.AddPolicy(MyAllowSpecificOrigins, policy =>
