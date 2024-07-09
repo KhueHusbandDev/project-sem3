@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using static Online_sms.Models.User;
 
 namespace Online_sms.Models
 {
@@ -41,19 +42,51 @@ namespace Online_sms.Models
 
                 var listUser = new List<User>();
 
+                string[] listImage = ["4.png",
+                                    "5.png",
+                                    "6.png",
+                                    "7.jpg",
+                                    "8.jpg",
+                                    "10.png",
+                                    "11.jpg"];
+
                 Random random = new Random();
 
                 for (int i = 0; i < 5; i++)
                 {
+                    var workStatus = (WorkStatus)random.Next(0, 3);
+                    var gender = (Gender)random.Next(0, 3);
                     listUser.Add(new User()
                     {
                         User_id = i + 1,
-                        User_name = Faker.Name.FullName(),
+                        User_name = Faker.Name.First(),
+                        Fullname = Faker.Name.FullName(),
                         Email = Faker.Name.First() + Faker.Name.Suffix() + "@gmail.com",
                         Password = "$2a$12$p6SajsJcQBaDyh2eMg54huGoVjNJxUaiCcDa81dWifXKnAlBbZoVa",
                         Balance = 0,
                         Phone_Number = Faker.Phone.Number(),
                         Subcription_id = 1,
+                        Address = Faker.Address.StreetAddress(),
+                        gender = gender,
+                        MaritalStatus = false,
+                        Image = listImage[random.Next(listImage.Length)],
+
+                        DOB = DateTime.Now,
+                        Hobbies = string.Join(", ", Faker.Lorem.Words(3)),
+                        Likes = string.Join(", ", Faker.Lorem.Words(3)),
+                        Dislikes = string.Join(", ", Faker.Lorem.Words(3)),
+
+                        Cuisines = "food",
+                        Sports = "soccer",
+                        Qualifications = "Bachelor's Degree",
+                        School = "Sample High School",
+                        Work_Status = workStatus,
+                        College = Faker.Company.Name(),
+                        Designation = "1",
+
+                        Organisation =  Faker.Company.Name(),
+                        SubscriptionEndDate = DateTime.Now.AddDays(1),
+                        IsEmailConfirmed = true,
                     });
                 }
                 options.HasData(listUser);

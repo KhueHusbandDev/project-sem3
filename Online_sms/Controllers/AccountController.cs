@@ -18,7 +18,7 @@ namespace Online_sms.Controllers
             _accountRepo = accountRepo;
         }
         [HttpPost]
-        public async Task<IActionResult> Register([FromForm] Register register)
+        public async Task<IActionResult> Register( Register register)
         {
             var customStatus = await _accountRepo.Register(register);
 
@@ -26,7 +26,7 @@ namespace Online_sms.Controllers
         }
 
         [HttpPost("confirm-email")]
-        public async Task<IActionResult> ConfirmEmail([FromForm] string email, [FromForm] string code)
+        public async Task<IActionResult> ConfirmEmail( string email, string code)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace Online_sms.Controllers
         }
 
         [HttpPost("upload-image")]
-        public async Task<IActionResult> UploadImage([FromForm] string email, [FromForm] IFormFile image)
+        public async Task<IActionResult> UploadImage(string email, IFormFile image)
         {
             var customStatus = await _accountRepo.UploadImage(email, image);
             return Ok(customStatus);

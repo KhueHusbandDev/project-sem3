@@ -20,7 +20,6 @@ namespace Online_sms.Controllers
         {
             _authRepo = authRepo;
         }
-
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> GetUser()
@@ -31,9 +30,8 @@ namespace Online_sms.Controllers
             return Ok(customStatus);
         }
 
-
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromForm] Login userLogin)
+        public async Task<IActionResult> Login( Login userLogin)
         {
             var customStatus = await _authRepo.Login(userLogin);
 
@@ -56,7 +54,7 @@ namespace Online_sms.Controllers
         }
 
         [HttpPost("resetpassword")]
-        public async Task<IActionResult> ResetPassword([FromForm] string email, [FromForm] string username, [FromForm] string newPassword)
+        public async Task<IActionResult> ResetPassword(string email, string username, string newPassword)
         {
             var result = await _authRepo.ResetPassword(email, username, newPassword);
             if (result.Status == 200)

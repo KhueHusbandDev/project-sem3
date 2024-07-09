@@ -123,9 +123,13 @@ namespace Online_sms.Repositories
             var user = new User()
             {
                 User_name = register.Username,
+                Fullname = register.Fullname,
                 Email = register.Email,
                 Phone_Number = register.PhoneNumber,
+                gender = User.Gender.other,
                 Password = BCrypt.Net.BCrypt.HashPassword(register.Password),
+                DOB = DateTime.Parse(register.DOBString),
+
                 IsEmailConfirmed = false,
                 ConfirmationCode = GenerateConfirmationCode(),
                 Subcription_id = 1,
@@ -195,7 +199,7 @@ namespace Online_sms.Repositories
                 await uploadImage.CopyToAsync(fileStream);
             }
 
-            //user.Image = fileName;
+            user.Image = fileName;
 
             await _context.SaveChangesAsync();
 

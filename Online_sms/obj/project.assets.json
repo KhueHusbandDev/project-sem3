@@ -72,6 +72,15 @@
           }
         }
       },
+      "Faker/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Faker.dll": {}
+        },
+        "runtime": {
+          "lib/Faker.dll": {}
+        }
+      },
       "Faker.Net/2.0.163": {
         "type": "package",
         "dependencies": {
@@ -2400,6 +2409,18 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "Faker/1.2.0": {
+      "sha512": "FvYt17xHV8R0DGb3O5scLtiWK8RrBuG0feDAWuzdM1l1bS62JOuhNgf4BgJthGFYZrEMKoU5XgCODLtXpS0cvw==",
+      "type": "package",
+      "path": "faker/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "faker.1.2.0.nupkg.sha512",
+        "faker.nuspec",
+        "lib/Faker.dll"
       ]
     },
     "Faker.Net/2.0.163": {
@@ -6333,6 +6354,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "BCrypt.Net-Next >= 4.0.3",
+      "Faker >= 1.2.0",
       "Faker.Net >= 2.0.163",
       "MailKit >= 4.6.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.6",
@@ -6397,6 +6419,10 @@
             "target": "Package",
             "version": "[4.0.3, )"
           },
+          "Faker": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Faker.Net": {
             "target": "Package",
             "version": "[2.0.163, )"
@@ -6458,5 +6484,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Faker 1.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Faker",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

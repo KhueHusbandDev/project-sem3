@@ -19,7 +19,7 @@ namespace Online_sms.Controllers
             _subscriptionRepo = subscriptionRepo;
         }
         [HttpPut]
-        public async Task<IActionResult> Addmoney([FromForm] int Balance)
+        public async Task<IActionResult> Addmoney(int Balance)
         {
             var User_Id = int.Parse(User.FindFirst("User_id")?.Value);
             var result = await _subscriptionRepo.AddMoney(User_Id,Balance);
@@ -33,7 +33,7 @@ namespace Online_sms.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> BuySubscription([FromForm] int subscriptionId)
+        public async Task<IActionResult> BuySubscription(int subscriptionId)
         {
             var User_Id = int.Parse(User.FindFirst("User_id")?.Value);
             var result = await _subscriptionRepo.BuySubscription(User_Id, subscriptionId);
