@@ -24,11 +24,11 @@ namespace Online_sms.Repositories
                 return new CustomResult(404, "Friendship not found", null);
             }
 
-            friendship.Accept = true;
+            friendship.isAccepted  = true;
             await _context.SaveChangesAsync();
             return new CustomResult(200, "Friend request accepted", friendship);
         }
-
+            
         public async Task<CustomResult> AddFriend(FriendRequest friendRequest)
         {
             var existingFriendship = await _context.Friends.FirstOrDefaultAsync(f =>

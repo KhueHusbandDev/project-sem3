@@ -10,6 +10,7 @@ namespace Online_sms.Models
             Messages = new List<RoomMessage>();
             Friends = new List<Friend>();
             Payments = new List<Payment>();
+            Contacts = new List<Contact>();
         }
         public enum WorkStatus
         {
@@ -84,6 +85,7 @@ namespace Online_sms.Models
         public virtual ICollection<RoomMessage> Messages { get; set; }
         public virtual ICollection<Friend> Friends { get; set; }
         public virtual ICollection<Payment> Payments { get; set; }
+        public virtual ICollection<Contact> Contacts { get; set; }
         public virtual Subscription? Subscription { get; set; }
     }
 
