@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Identity;
 
 namespace Online_sms.Repositories
 {
@@ -152,6 +153,7 @@ namespace Online_sms.Repositories
                 return new CustomResult(400, ex.Message, null);
             }   
         }
+        
         public string GenerateConfirmationCode()
         {
             var random = new Random();
@@ -176,9 +178,7 @@ namespace Online_sms.Repositories
                 return new CustomResult(400, "Invalid confirmation code", null);
             }
         }
-
-
-
+        
         public async Task<CustomResult> UploadImage(string email, IFormFile uploadImage)
         {
             var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email);    
@@ -198,6 +198,49 @@ namespace Online_sms.Repositories
 
             return new CustomResult(200, "Success", user);
 
+        }
+        //da login roi nen doi ten khong can check for user
+        public async Task<CustomResult> ChangeUsername(string newUsername)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.User_name == newUsername);
+            if (user != null)
+            {
+                return new CustomResult(400, "Username already exists!", null);
+            }
+            
+            var usernameValidationResult = await CheckUsername(newUsername);
+            if (usernameValidationResult.Message != "Username accepted!")
+            {
+                return usernameValidationResult;
+            }
+            user.User_name = newUsername;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return new CustomResult(200, "Profile updated successfully.", user);
+        }
+        public async Task<CustomResult> ChangeAddress(string newAddress)
+        {
+            var currentUser = await _context.Users.FindAsync();
+            if (currentUser != null)
+            {
+                currentUser.Address = newAddress;
+                await _context.SaveChangesAsync();
+                return new CustomResult(200, "Address updated successfully", null);
+            }
+
+            return new CustomResult(400, "User not found", null);
+        }
+        public async Task<CustomResult> ChangeHobbies(string newHobbies)
+        {
+            var currentUser = await _context.Users.FindAsync();
+            if (currentUser != null)
+            {
+                currentUser.Hobbies = newHobbies;
+                await _context.SaveChangesAsync();
+                return new CustomResult(200, "Hobbies updated successfully", null);
+            }
+
+            return new CustomResult(400, "User not found", null);
         }
 
         private string GenerateEmailBody(string url,string code)

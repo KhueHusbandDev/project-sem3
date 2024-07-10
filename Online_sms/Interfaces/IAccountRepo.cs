@@ -21,6 +21,9 @@ namespace Online_sms.Interfaces
         public Task<CustomResult> CheckUsername(string username);
         public Task<CustomResult> CheckPassword(string password);
         public Task<CustomResult> VerifyEmailConfirmationCode(User user, string enteredCode);
+        public  Task<CustomResult> ChangeUsername(string newUsername);
+        public Task<CustomResult> ChangeAddress(string newAddress);
+        public Task<CustomResult> ChangeHobbies(string newHobbies);
         public Task<User> GetUserByEmailAsync(string email);
 
         public Task<CustomResult> UploadImage(string email, IFormFile uploadImage);

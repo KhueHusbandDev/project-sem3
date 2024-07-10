@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.Win32;
 
 namespace Online_sms.Controllers
 {
@@ -21,6 +22,13 @@ namespace Online_sms.Controllers
         public async Task<IActionResult> Register([FromForm]Register register)
         {
             var customStatus = await _accountRepo.Register(register);
+
+            return Ok(customStatus);
+        }
+        [HttpPost("ChangeUsername")]
+        public async Task<IActionResult> ChangeUsername([FromForm] string newUsername)
+        {
+            var customStatus = await _accountRepo.ChangeUsername(newUsername);
 
             return Ok(customStatus);
         }

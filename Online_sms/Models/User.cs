@@ -40,6 +40,10 @@ namespace Online_sms.Models
         public string Organisation { get; set; }
         public int Subcription_id { get; set; }
         public decimal Balance { get; set; }
+        public string Gender { get; set; }  
+        public string Marital_Status { get; set; }
+        public string Work_Status { get; set; }
+        public string Profile_Picture { get; set; }
         public virtual ChatLimit ChatLimit { get; set; }
         public virtual ICollection<RoomMessage> Messages { get; set; }
         public virtual ICollection<Friend> Friends { get; set; }
