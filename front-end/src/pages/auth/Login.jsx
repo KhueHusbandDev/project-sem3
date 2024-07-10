@@ -24,7 +24,11 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={handleSubmit(onLogin)}>
             <FloatingInput label="Phone Number" {...register("phoneNumber")} />
-            <FloatingInput label="Password" {...register("password")} />
+            <FloatingInput
+              type="password"
+              label="Password"
+              {...register("password")}
+            />
             <div>
               <button
                 type="submit"

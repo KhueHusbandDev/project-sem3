@@ -1,4 +1,4 @@
-import { AppShell } from "@mantine/core";
+import { AppShell, rem } from "@mantine/core";
 import { Navbar } from "./NavBar";
 import { Outlet } from "react-router-dom";
 import { Header } from "./Header";
@@ -19,7 +19,7 @@ export const Layout = () => {
       <AppShell.Navbar p="md">
         <Navbar />
       </AppShell.Navbar>
-      <AppShell.Main className="overflow-scroll w-[100vw] h-[100vh]">
+      <AppShell.Main className="!pl-[290px]">
         <Outlet />
       </AppShell.Main>
     </AppShell>

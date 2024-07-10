@@ -1,13 +1,13 @@
-import { AppShell } from "@mantine/core";
+import { AppShell, rem } from "@mantine/core";
 import { Navigate, Outlet } from "react-router-dom";
 import { Header } from "../layout/Header";
 import { Navbar } from "../layout/NavBar";
 import { useAuth } from "./AuthProvider";
 
 const PrivateRoute = () => {
-  const { user } = useAuth();
+const { user } = useAuth();
   if (!user) return <Navigate to="/" />;
-  
+
   return (
     <AppShell
       header={{ height: 60 }}
@@ -23,7 +23,10 @@ const PrivateRoute = () => {
       <AppShell.Navbar p="md">
         <Navbar />
       </AppShell.Navbar>
-      <AppShell.Main>
+      <AppShell.Main
+        pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
+        pl={`calc(${rem(150)} + var(--mantine-spacing-md))`}
+      >
         <Outlet />
       </AppShell.Main>
     </AppShell>
