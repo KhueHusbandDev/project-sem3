@@ -20,6 +20,7 @@ namespace Online_sms.Models
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Payment> Payment { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Contact> Contact { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,6 +34,11 @@ namespace Online_sms.Models
                 options.HasMany(u => u.Friends)
                     .WithOne(f => f.User)
                     .HasForeignKey(f => f.User_Id)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                options.HasMany(u => u.Contacts)
+                    .WithOne(f => f.User)
+                    .HasForeignKey(f => f.User_id)
                     .OnDelete(DeleteBehavior.Cascade);
 
                 options.HasOne(u => u.Subscription)
@@ -123,6 +129,7 @@ namespace Online_sms.Models
                 modelBuilder.Entity<Subscription>()
                     .Property(s => s.Price)
                     .HasColumnType("decimal(18,2)");
+               
             });
         }
     } 

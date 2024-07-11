@@ -55,7 +55,7 @@ namespace Online_sms.Repositories
 
         public async Task<CustomResult> UpdatePaymentAsync(Payment payment)
         {
-            _context.Entry(payment).State = EntityState.Modified;
+            _context.Payment.Update(payment);
             await _context.SaveChangesAsync();
             return new CustomResult(200, "payment update successfully", payment);
         }
